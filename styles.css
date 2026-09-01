@@ -180,19 +180,10 @@ img {
   max-width: 780px;
   margin: 0;
   font-size: clamp(4.2rem, 9vw, 8.8rem);
-  font-weight: 760;
+  font-weight: 600;
   letter-spacing: -0.075em;
-  line-height: 0.86;
+  line-height: 1;
   animation: rise-in 900ms 240ms cubic-bezier(.2,.75,.25,1) both;
-}
-
-.hero h1 em {
-  display: inline-block;
-  padding: 0 0 0.09em;
-  font-style: normal;
-  font-weight: 360;
-  letter-spacing: -0.085em;
-  line-height: 1.1;
 }
 
 .hero__copy {
