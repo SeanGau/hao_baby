@@ -1,0 +1,11 @@
+# Windows 路徑被誤建成資料夾（例如 lighthouse --chrome-flags 帶 Windows user-data-dir）
+/C:*
+
+# Jekyll / GitHub Pages
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Lighthouse 報告與暫存 profile
+lighthouse*.report.*
+.lighthouseci/
