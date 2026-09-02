@@ -416,7 +416,8 @@ img {
 }
 
 .wish h2 {
-  font-size: clamp(3.7rem, 8vw, 7.7rem);
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 1.1;
 }
 
 .wish > p:last-child {
@@ -436,6 +437,12 @@ img {
   border-top: 1px solid var(--line);
   color: var(--ink-muted);
   font-size: 0.9rem;
+}
+
+.footer h3 {
+  color: var(--ink);
+  font-size: clamp(1.5rem, 3vw, 5rem);
+  margin: 0;
 }
 
 .footer a {
