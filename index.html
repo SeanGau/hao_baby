@@ -19,7 +19,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#story">前往主要內容</a>
+  <a class="skip-link" href="#album">前往主要內容</a>
 
   <header class="hero" aria-labelledby="hero-title">
     <img class="hero__image" src="img/封面用.jpg" srcset="img/mobile/封面用.webp 768w, img/mobile/封面用-1280.webp 1280w, img/封面用.jpg 1920w" sizes="100vw" alt="皓皓的小腳被家人的雙手溫柔環抱" width="1920" height="1280" fetchpriority="high">
@@ -31,44 +31,22 @@
     <div class="hero__content" id="top">
       <h1 id="hero-title">皓皓的<br>滿月寫真</h1>
       <p class="hero__copy">小小的你，有好多可愛模樣。把這一刻，好好收藏。</p>
-      <a class="button button--light" href="#story">翻開相簿</a>
+      <a class="button button--light" href="#album">翻開相簿</a>
     </div>
   </header>
 
   <main>
-    <section class="intro section" id="story" aria-labelledby="story-title">
-      <div class="intro__copy reveal">
-        <h2 id="story-title">每一個<br>模樣都可愛</h2>
-        <p>睜開眼睛、嘟起小嘴，或是在柔軟的毛毯裡睡得香甜。鏡頭裡的每個表情，都讓人忍不住多看幾眼。</p>
-        <p class="signature">小小的你，是今天的主角</p>
-      </div>
-      <button class="photo-frame photo-frame--portrait reveal" type="button" data-lightbox="img/IAN_00038.jpg" data-title="可愛登場" aria-label="放大照片：皓皓睜開眼睛看著鏡頭">
-        <img src="img/IAN_00038.jpg" srcset="img/mobile/IAN_00038.webp 768w, img/mobile/IAN_00038-1280.webp 1280w, img/IAN_00038.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), 500px" alt="皓皓躺在柔軟毛毯上，睜開眼睛看著鏡頭" width="1920" height="2880" loading="lazy" decoding="async">
-      </button>
-    </section>
-
-    <section class="football section" aria-labelledby="football-title">
-      <div class="football__heading reveal">
-        <h2 id="football-title">第一套球衣</h2>
-        <p>先學會好好睡一覺，再把全家的心都踢進球門。</p>
-      </div>
-      <div class="football__photos">
-        <button class="photo-frame photo-frame--wide reveal" type="button" data-lightbox="img/IAN_00008.jpg" data-title="小小前鋒" aria-label="放大照片：皓皓穿著阿根廷球衣熟睡">
-          <img src="img/IAN_00008.jpg" srcset="img/mobile/IAN_00008.webp 768w, img/mobile/IAN_00008-1280.webp 1280w, img/IAN_00008.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), 850px" alt="皓皓穿著阿根廷球衣，在迷你足球場景中熟睡" width="1920" height="1280" loading="lazy" decoding="async">
+    <section class="album section" id="album" aria-label="皓皓的滿月照片集">
+      <div class="masonry">
+        <button class="gallery-photo gallery-photo--wide reveal" type="button" data-lightbox="img/IAN_00008.jpg" data-title="小小前鋒" aria-label="放大照片：皓皓穿著阿根廷球衣熟睡">
+          <img src="img/IAN_00008.jpg" srcset="img/mobile/IAN_00008.webp 768w, img/mobile/IAN_00008-1280.webp 1280w, img/IAN_00008.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc(100vw - 36px), 845px" alt="皓皓穿著阿根廷球衣，在迷你足球場景中熟睡" width="1920" height="1280" loading="lazy" decoding="async">
         </button>
-        <button class="photo-frame photo-frame--detail reveal" type="button" data-lightbox="img/IAN_00003.jpg" data-title="小小前鋒" aria-label="放大照片：皓皓穿著球衣的可愛特寫">
-          <img src="img/IAN_00003.jpg" srcset="img/mobile/IAN_00003.webp 768w, img/mobile/IAN_00003-1280.webp 1280w, img/IAN_00003.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), 400px" alt="皓皓穿著藍白球衣與毛線球鞋的可愛特寫" width="1920" height="1280" loading="lazy" decoding="async">
+        <button class="gallery-photo gallery-photo--wide reveal" type="button" data-lightbox="img/IAN_00003.jpg" data-title="小小前鋒" aria-label="放大照片：皓皓穿著球衣的可愛特寫">
+          <img src="img/IAN_00003.jpg" srcset="img/mobile/IAN_00003.webp 768w, img/mobile/IAN_00003-1280.webp 1280w, img/IAN_00003.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc(100vw - 36px), 845px" alt="皓皓穿著藍白球衣與毛線球鞋的可愛特寫" width="1920" height="1280" loading="lazy" decoding="async">
         </button>
-      </div>
-    </section>
-
-    <section class="album section" id="album" aria-labelledby="album-title">
-      <div class="album__heading reveal">
-        <h2 id="album-title">可愛模樣，<br>一次收藏</h2>
-        <p>有時醒著看鏡頭，有時沉沉睡著。點開照片，看看皓皓的滿月寫真。</p>
-      </div>
-
-      <div class="masonry" aria-label="皓皓滿月照片集">
+        <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00038.jpg" data-title="可愛登場" aria-label="放大照片：皓皓睜開眼睛看著鏡頭">
+          <img src="img/IAN_00038.jpg" srcset="img/mobile/IAN_00038.webp 768w, img/mobile/IAN_00038-1280.webp 1280w, img/IAN_00038.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓躺在柔軟毛毯上，睜開眼睛看著鏡頭" width="1920" height="2880" loading="lazy" decoding="async">
+        </button>
         <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00053.jpg" data-title="在家人的手心裡" aria-label="放大照片：皓皓被家人的手輕輕捧著臉">
           <img src="img/IAN_00053.jpg" srcset="img/mobile/IAN_00053.webp 768w, img/mobile/IAN_00053-1280.webp 1280w, img/IAN_00053.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓被家人的手輕輕捧著臉" width="1920" height="2880" loading="lazy" decoding="async">
         </button>
@@ -78,17 +56,17 @@
         <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00061.jpg" data-title="一場甜甜的夢" aria-label="放大照片：皓皓穿著白色針織帽">
           <img src="img/IAN_00061.jpg" srcset="img/mobile/IAN_00061.webp 768w, img/mobile/IAN_00061-1280.webp 1280w, img/IAN_00061.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓穿著白色針織帽，在柔軟白色毛毯上休息" width="1920" height="2880" loading="lazy" decoding="async">
         </button>
-        <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00084.jpg" data-title="It's a boy" aria-label="放大照片：皓皓在藍白色花朵場景中熟睡">
-          <img src="img/IAN_00084.jpg" srcset="img/mobile/IAN_00084.webp 768w, img/mobile/IAN_00084-1280.webp 1280w, img/IAN_00084.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓戴著白色帽子，在藍白色花朵場景中熟睡" width="1920" height="2880" loading="lazy" decoding="async">
-        </button>
         <button class="gallery-photo gallery-photo--wide reveal" type="button" data-lightbox="img/IAN_00097.jpg" data-title="小小的夢" aria-label="放大照片：皓皓戴著藍白小花髮飾熟睡">
           <img src="img/IAN_00097.jpg" srcset="img/mobile/IAN_00097.webp 768w, img/mobile/IAN_00097-1280.webp 1280w, img/IAN_00097.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc(100vw - 36px), 845px" alt="皓皓戴著藍白小花髮飾，在白色毛毯上熟睡" width="1920" height="1280" loading="lazy" decoding="async">
         </button>
-        <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00103.jpg" data-title="柔軟時光" aria-label="放大照片：皓皓裹著毛毯安靜休息">
-          <img src="img/IAN_00103.jpg" srcset="img/mobile/IAN_00103.webp 768w, img/mobile/IAN_00103-1280.webp 1280w, img/IAN_00103.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓裹著米白毛毯安靜休息" width="1920" height="2880" loading="lazy" decoding="async">
+        <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00084.jpg" data-title="It's a boy" aria-label="放大照片：皓皓在藍白色花朵場景中熟睡">
+          <img src="img/IAN_00084.jpg" srcset="img/mobile/IAN_00084.webp 768w, img/mobile/IAN_00084-1280.webp 1280w, img/IAN_00084.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓戴著白色帽子，在藍白色花朵場景中熟睡" width="1920" height="2880" loading="lazy" decoding="async">
         </button>
         <button class="gallery-photo gallery-photo--wide reveal" type="button" data-lightbox="img/IAN_00110.jpg" data-title="小小森林" aria-label="放大照片：皓皓與蔬果玩偶一起熟睡">
           <img src="img/IAN_00110.jpg" srcset="img/mobile/IAN_00110.webp 768w, img/mobile/IAN_00110-1280.webp 1280w, img/IAN_00110.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc(100vw - 36px), 845px" alt="皓皓在藤籃裡與蔬果玩偶一起熟睡" width="1920" height="1280" loading="lazy" decoding="async">
+        </button>
+        <button class="gallery-photo reveal" type="button" data-lightbox="img/IAN_00103.jpg" data-title="柔軟時光" aria-label="放大照片：皓皓裹著毛毯安靜休息">
+          <img src="img/IAN_00103.jpg" srcset="img/mobile/IAN_00103.webp 768w, img/mobile/IAN_00103-1280.webp 1280w, img/IAN_00103.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc((100vw - 54px) / 2), 410px" alt="皓皓裹著米白毛毯安靜休息" width="1920" height="2880" loading="lazy" decoding="async">
         </button>
         <button class="gallery-photo gallery-photo--wide reveal" type="button" data-lightbox="img/IAN_00115.jpg" data-title="好夢正在發生" aria-label="放大照片：皓皓抱著綠色蔬果玩偶">
           <img src="img/IAN_00115.jpg" srcset="img/mobile/IAN_00115.webp 768w, img/mobile/IAN_00115-1280.webp 1280w, img/IAN_00115.jpg 1920w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 840px) calc(100vw - 36px), 845px" alt="皓皓抱著綠色蔬果玩偶，戴著葉子造型帽" width="1920" height="1280" loading="lazy" decoding="async">

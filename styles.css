@@ -163,19 +163,6 @@ img {
   padding: 28px 0 48px;
 }
 
-.eyebrow,
-.section-label {
-  margin: 0 0 20px;
-  font-size: 0.78rem;
-  font-weight: 750;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.eyebrow {
-  animation: rise-in 700ms 180ms ease both;
-}
-
 .hero h1 {
   max-width: 780px;
   margin: 0;
@@ -227,53 +214,6 @@ img {
   margin: 0 auto;
 }
 
-.intro {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 0.84fr) minmax(340px, 0.72fr);
-  gap: clamp(48px, 9vw, 140px);
-  align-items: center;
-  padding-top: clamp(92px, 12vw, 170px);
-  padding-bottom: clamp(100px, 13vw, 180px);
-}
-
-.intro__copy {
-  padding-left: clamp(0px, 4vw, 64px);
-}
-
-.section-label {
-  color: var(--accent);
-}
-
-.intro h2,
-.football h2,
-.album h2,
-.wish h2 {
-  margin: 0;
-  font-weight: 720;
-  letter-spacing: -0.06em;
-  line-height: 0.98;
-}
-
-.intro h2 {
-  font-size: clamp(3.5rem, 7vw, 6.9rem);
-}
-
-.intro__copy > p:not(.section-label):not(.signature) {
-  max-width: 34rem;
-  margin: 36px 0 0;
-  color: var(--ink-muted);
-  font-size: clamp(1.02rem, 1.35vw, 1.18rem);
-}
-
-.signature {
-  margin: 30px 0 0;
-  color: var(--accent-deep);
-  font-size: 0.9rem;
-  font-weight: 750;
-}
-
-.photo-frame,
 .gallery-photo {
   position: relative;
   overflow: hidden;
@@ -281,28 +221,24 @@ img {
   border: 0;
   border-radius: var(--radius);
   background: var(--paper-soft);
-  box-shadow: var(--shadow);
   cursor: zoom-in;
 }
 
-.photo-frame img,
 .gallery-photo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transition: transform 600ms cubic-bezier(.2,.75,.25,1), filter 250ms ease;
 }
 
-.photo-frame:hover img,
 .gallery-photo:hover img {
   transform: scale(1.025);
 }
 
-.photo-frame:active,
 .gallery-photo:active {
   transform: translateY(1px) scale(0.995);
 }
 
-.photo-frame:focus-visible,
 .gallery-photo:focus-visible,
 .lightbox button:focus-visible,
 .footer a:focus-visible,
@@ -311,77 +247,9 @@ img {
   outline-offset: 4px;
 }
 
-.photo-frame--portrait {
-  aspect-ratio: 2 / 3;
-}
-
-.photo-frame--portrait img,
-.photo-frame--detail img {
-  object-fit: cover;
-}
-
-
-.football {
-  padding: clamp(100px, 13vw, 170px) 0 clamp(110px, 14vw, 190px);
-  border-top: 1px solid var(--line);
-}
-
-.football__heading {
-  max-width: 700px;
-  margin-bottom: clamp(44px, 6vw, 78px);
-}
-
-.football h2 {
-  font-size: clamp(3.5rem, 7vw, 7rem);
-}
-
-.football__heading > p:last-child {
-  max-width: 28rem;
-  margin: 28px 0 0;
-  color: var(--ink-muted);
-}
-
-.football__photos {
-  display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.62fr);
-  gap: clamp(18px, 3vw, 42px);
-  align-items: end;
-}
-
-.photo-frame--wide {
-  aspect-ratio: 3 / 2;
-}
-
-.photo-frame--wide img {
-  object-fit: cover;
-}
-
-.photo-frame--detail {
-  aspect-ratio: 4 / 5;
-  margin-bottom: -72px;
-}
-
 .album {
   padding-top: clamp(92px, 14vw, 190px);
   padding-bottom: clamp(110px, 14vw, 190px);
-}
-
-.album__heading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 28px;
-  margin-bottom: clamp(56px, 8vw, 96px);
-}
-
-.album h2 {
-  font-size: clamp(3.8rem, 7.4vw, 7.4rem);
-}
-
-.album__heading p {
-  max-width: 32rem;
-  margin: 0;
-  color: var(--ink-muted);
 }
 
 .masonry {
@@ -393,16 +261,8 @@ img {
   gap: var(--album-gap);
 }
 
-.gallery-photo {
-  box-shadow: none;
-}
-
 .gallery-photo--wide {
   grid-column: span 2;
-}
-
-.gallery-photo img {
-  object-fit: cover;
 }
 
 .wish {
@@ -416,7 +276,10 @@ img {
 }
 
 .wish h2 {
+  margin: 0;
   font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 720;
+  letter-spacing: -0.06em;
   line-height: 1.1;
 }
 
@@ -605,21 +468,10 @@ img {
     font-size: clamp(3.8rem, 14vw, 6.6rem);
   }
 
-  .intro {
-    grid-template-columns: minmax(0, 0.72fr) minmax(280px, 1fr);
-    gap: 34px;
-  }
-
   .masonry {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-auto-rows: calc((100vw - 36px - var(--album-gap)) * 2 / 3);
   }
-
-
-  .football__photos {
-    grid-template-columns: 1fr 0.55fr;
-  }
-
 }
 
 @media (max-width: 640px) {
@@ -669,52 +521,8 @@ img {
     font-size: 0.95rem;
   }
 
-  .intro {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    padding-top: 80px;
-    padding-bottom: 96px;
-  }
-
-  .intro__copy {
-    padding-left: 0;
-  }
-
-  .intro h2,
-  .football h2,
-  .album h2,
   .wish h2 {
     font-size: clamp(3rem, 13vw, 4rem);
-  }
-
-  .intro__copy > p:not(.section-label):not(.signature) {
-    margin-top: 28px;
-  }
-
-  .photo-frame--portrait {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .football {
-    padding-top: 80px;
-    padding-bottom: 96px;
-  }
-
-  .football__photos {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .photo-frame--detail {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    margin: 0;
-    border: 0;
-  }
-
-  .photo-frame--detail img {
-    object-position: center 32%;
   }
 
   .album {
